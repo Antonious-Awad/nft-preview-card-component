@@ -15,8 +15,10 @@ body{
 .container{
   background-color: hsl(216, 50%, 16%);
   border-radius: 13px;
-  width: 15rem;
-  padding: 19px;  
+  /* width: 15rem; */
+  width: 255px;
+  /* padding: 19px;   */
+  padding: 20px;  
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
