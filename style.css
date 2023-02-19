@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+  margin: 0;
+}
+.box{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(217, 54%, 11%);
+  
+}
+
+.container{
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 13px;
+  width: 15rem;
+  padding: 19px;  
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.image{
+  background-image: url("/images/image-equilibrium.jpg");
+  width: 252px;
+  height: 252px;
+  background-size: cover;
+  border-radius: 10px;
+  margin:0;
+  position: relative;
+  overflow: hidden;
+}
+.hover{
+  position: absolute;
+  background-color:hsla(178, 100%, 50%,0);
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transition: all 0.2s ease ;
+  cursor: pointer;
+}
+.eye{
+  opacity:0;
+}
+.hover:hover{
+    background-color:hsla(178, 100%, 50%,50%);
+}
+.hover:hover .eye{
+  opacity: 1;
+}
+.text{
+  color: hsl(215, 51%, 70%);
+  font-family: outfit;
+}
+.prod{
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size:14pt;
+  cursor: pointer;
+}
+.prod:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+.desc{
+  font-weight: 300;
+  font-size: 12pt;
+}
+.pt{
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+}
+.price{
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+  font-size: 11pt;
+  font-weight: 600;
+}
+.price-img{
+  padding-right: 5px;
+}
+.time-img{
+  padding-right: 5px;
+}
+.time{
+  display: flex;
+  align-items: center;
+  font-size: 11pt;
+  font-weight: 400;
+}
+.line{
+  margin-top:20px;
+  margin-bottom: 20px;
+  background-color: hsl(215, 32%, 27%);
+  /* width: max; */
+  height: 1px;
+}
+.auth{
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding:15px 0px 14px 0px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 11pt;
+}
+
+.auth-img{
+  height: 26px;
+  border: 1px solid white;
+  border-radius: 100px;
+  margin-right: 10px;
+  
+  /* border-color: white; */
+  /* border-width: 1px; */
+}
+.username{
+  padding-left: 5px;
+  color: white;
+  cursor: pointer;
+}
+.username:hover{
+  color:hsl(178, 100%, 50%)
+}
